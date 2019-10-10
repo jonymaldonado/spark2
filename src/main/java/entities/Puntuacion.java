@@ -25,6 +25,10 @@ public class Puntuacion extends EntidadPersistente {
         this.setPuntos(puntos);
         this.setFecha(LocalDate.now());
     }
+    
+    public Puntuacion() {
+    	
+    }
 
     public Aporte getAporte() {
         return aporte;
