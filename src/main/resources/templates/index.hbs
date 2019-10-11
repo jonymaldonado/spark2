@@ -22,73 +22,7 @@
     </header>
     <div class="main_container">
 
-      <div class="contenedor-carta-usuario">
-        <div class="carta-usuario">
-          <form class="" action="/usuarios/{{id}}" method="post" style="">
 
-            <div class="form-cargar-usuario">
-              <div class="" style="text-align:center;">
-                <label for="input-img-usuario"><img src="/img/usuario.png" class="imagen-perfil" alt=""></label>
-                <input id="input-img-usuario" type="file" name="" value="" style="display:none;">
-              </div>
-
-              <div class="" style="margin:40px;">
-                <label><i class="fas fa-user"></i> Usuario</label>
-                <br>
-                <input type="text" name="nombreDeUsuario"  class="input-datos" placeholder="Usuario" >
-                <br>
-                <br>
-                <label><i class="fas fa-file-signature"></i>  Nombre</label>
-                <br>
-                <input type="text" name="nombre" class="input-datos" placeholder="Nombre" value="{{usuario.nombre}}">
-                <br>
-                <br>
-                <label><i class="fas fa-file-signature"></i>  Apellido</label>
-                <br>
-                <input type="text" name="apellido" class="input-datos" placeholder="Apellido" value="{{usuario.apellido}}">
-                <br>
-                <br>
-                <label><i class="fas fa-calendar-alt"> </i> Fecha de Nacimiento</label>
-                <br>
-                <input type="date" name="fechaDeNacimiento" class="input-datos"  placeholder="Fecha de Nacimiento" value="{{usuario.fechaDeNacimiento}}">
-              </div>
-              <div class="" style="margin:40px;">
-                <label><i class="fas fa-envelope"></i> E-mail</label>
-                <br>
-                <input type="email"  class="input-datos"name="email"  placeholder="E-mail" value="{{usuario.email}}">
-                <br>
-                <br>
-                <label><i class="fas fa-phone"></i> Teléfono</label>
-                <br>
-                <input type="number"  class="input-datos" name="telefono" placeholder="Teléfono" value="{{usuario.telefono}}">
-                <br>
-                <br>
-                <label><i class="fas fa-id-card-alt"> </i> Nº Legajo</label>
-                <br>
-                <input type="text" name="legajo" class="input-datos"  placeholder="Nº Legajo" value="{{usuario.legajo}}">
-                <br>
-                <br>
-                <label><i class="fas fa-unlock-alt"> </i> Contraseña</label>
-                <br>
-                <input type="password" name="password" value="" class="input-datos" placeholder="Contraseña" value="{{usuario.contraseña}}">
-                <br>
-                <br>
-                <label><i class="fas fa-user-cog"></i>  Perfil</label>
-                <br>
-                <select class="input-select" name="">
-                   <option>Seleccionar</option>
-                   <option>Administrador General</option>
-                   <option>Administrador</option>
-                   <option>Usuario</option>
-                </select>
-
-              </div>
-            </div>
-            <input href="/usuarios" type="submit" name="" class="btn-verde" style="float:right;"  value="Crear usuario">
-            <a href="" class="btn-border-blue" style="">Volver</a>
-          </form>
-        </div>
-      </div>
 
     </div>
   </body>
