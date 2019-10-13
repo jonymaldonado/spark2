@@ -115,15 +115,27 @@ header{
 }
 .btn-border-blue{
   padding: 7px;
-  margin: 10px;
-  width: 35px;
+  width: 150px;
   height: 35px;
   font-size: 16px;
   border-radius: 5px;
   color:rgb(10, 123, 199);
   border: 1px solid rgb(10, 123, 199);
   text-decoration: none;
+  position: absolute;
+  text-align: center;
+
 }
+#contenedor_interno {
+  height: 200px;
+  top: 20%;
+  display: inline-block;
+}
+.botones.fas_fa-user-plus{
+   margin-bottom: 200px;
+}
+
+
 #inputUsuario{
   position:fixed;
   right:25px;
@@ -257,3 +269,4 @@ header{
     padding: 10px;
   }
 }
+
