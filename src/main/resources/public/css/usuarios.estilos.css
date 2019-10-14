@@ -136,7 +136,10 @@ header{
 }
 
 
-#inputUsuario{
+#inputUsuario{      <groupId> org.uqbar-project </groupId>
+      <artifactId> jpa-java8-extras </artifactId>
+      <version> 1.0-alpha-1 </version>
+    </dependency>
   position:fixed;
   right:25px;
   top:100px;
@@ -170,7 +173,7 @@ header{
 }
 .btn-close-modal {
   cursor:pointer;
-  float:right;
+  float:left;
   background-color: grey;
   border:0px;
   color:white;
@@ -186,7 +189,9 @@ header{
   border-radius: 5px;
   color:white;
   cursor:pointer;
-
+}
+.botones1{
+  display: inline-table;
 }
 .btn-rojo{
   border:0px;

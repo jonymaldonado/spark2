@@ -7,32 +7,17 @@ import spark.ModelAndView;
 import spark.Request;
 import spark.Response;
 
-public class GuardarropaController {
+public class EventoController {
 	
 	private Map<String,Object> model=new HashMap<>(); 
 
 	
 	
 	
-	public ModelAndView mostrarGuardarropasUsuario(Request req, Response res) {
+	public ModelAndView mostrarTodos(Request req, Response res) {
  		ModelAndView vista= new ModelAndView(model,"guardarropa.hbs");
 		
 		return vista;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

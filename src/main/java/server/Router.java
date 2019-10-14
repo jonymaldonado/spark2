@@ -3,6 +3,7 @@ package server;
 import org.eclipse.jetty.server.Response;
 import org.hibernate.jpa.boot.scan.spi.PackageInfoArchiveEntryHandler;
 
+import controllers.EventoController;
 import controllers.GuardarropaController;
 import controllers.PrincipalController;
 import controllers.UsuarioController;
@@ -33,7 +34,8 @@ public class Router {
     	UsuarioController usuarioController=new UsuarioController();
     	PrincipalController paginaController=new PrincipalController();
     	GuardarropaController guardarropaController=new GuardarropaController();
-    	
+    	EventoController eventoController=new EventoController();
+
     	//Spark.get("/saludo",(req,res)->"Hola");
     	Spark.get("/saludo/:nombre",usuarioController::saludo);
     	//Spark.get("/saludo/:nombre",(req,res)->"Hola "+ req.params("apellido")+" "+req.params("nombre"));
@@ -50,6 +52,8 @@ public class Router {
     	Spark.get("/", paginaController::mostrarPaginaPrincipal, Router.engine);
 
     	Spark.get("/guardarropa", guardarropaController::mostrarGuardarropasUsuario,Router.engine);
+    	
+    	Spark.get("/eventos", eventoController::mostrarTodos,Router.engine);
 
     }
 }

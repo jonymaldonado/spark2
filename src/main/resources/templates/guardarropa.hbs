@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="icon" href="img/logosolo.png">
     <link rel="stylesheet" href="/css/usuarios.estilos.css">
-    <title>Usuarios</title>
+    <title>Guardarropa</title>
   </head>
   <body id="body">
     <header>
@@ -21,37 +21,74 @@
       </div>
 
     </header>
-    <div class="main_container">
-      <h1 class="encabezado"><i class="fas fa-users"></i> Usuarios</h1>
+  <div class="main_container">
+      <h1 class="encabezado"><i class="fas fa-tshirt"></i> Guardarropa</h1>
       <input type="text" name="" value="" placeholder="Buscar" id="inputUsuario">
-      <a href="" class="btn-border-blue fuente"><i class="fas fa-user-plus" style="margin-bottom:99px;"></i> Nuevo usuario</a>
-      <table class="tabla" id="tabla">
+        <table>
         <thead>
           <th><i class="fas fa-user"></i> id</th>
           <th><i class="fas fa-envelope"></i> Nombre</th>
-          <th><i class="fas fa-phone"></i> Teléfono</th>
+          <!--th><i class="fas fa-phone"></i> Teléfono</th>
           <th><i class="fas fa-id-card-alt"></i> Legajo</th>
 
-          <th><i class="fas fa-user-cog"></i> Perfil</th>
+          <th><i class="fas fa-user-cog"></i> Perfil</th>-->
           <th><i class="fas fa-tools"></i> Acciones</th>
         </thead>
-        <tbody>
+       <!--  <tbody> -->
         <tr>
-            <td><i class="fas fa-user"></i> Lucas Saclier</td>
-            <td>saclier@diseniosistemas.com.ar</td>
-            <td>1536617317</td>
+            <td><i class="fas fa-tshirt"></i>1</td>
+            <td>Guardarropa 1</td>
+            <!--td>1536617317</td>
             <td>149.634-7</td>
-            <td>Admin</td>
+            <td>Admin</td>-->
             <td>
-                <a href="" name="button" style="margin:0px;" class="btn btn-border btn-border-blue" >
-                  <i class="far fa-eye"></i></a><!--visualizar  -->
-                <a href="" name="button" class=" btn btn-edit"><i class="fas fa-user-edit"></i></a><!--editar  -->
+               <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-check-square"></i></button><!--tildar guardarropa  -->
+
+                <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-edit"></i></button><!--editar  -->
+
                 <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-trash"></i></button><!--eliminar  -->
             </td>
         </tr>
-        </tbody>
+
+        <tr>
+            <td><i class="fas fa-tshirt"></i>2 </td>
+            <td>Salidas Nocturnas</td>
+            <!--td>1536617317</td>
+            <td>149.634-7</td>
+            <td>Admin</td>-->
+            <td>
+               <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-check-square"></i></button><!--tildar guardarropa  -->
+
+                <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-edit"></i></button><!--editar  -->
+
+                <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-trash"></i></button><!--eliminar  -->
+            </td>
+        </tr>
+
+        <tr>
+            <td><i class="fas fa-tshirt"></i>3 </td>
+            <td>Playa</td>
+            <!--td>1536617317</td>
+            <td>149.634-7</td>
+            <td>Admin</td>-->
+            <td>
+
+                <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-check-square"></i></button><!--tildar guardarropa  -->
+
+                <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-edit"></i></button><!--editar  -->
+
+                <button type="button" name="button" class="btn" onclick="confirmarEliminacion()"><i class="fas fa-trash"></i></button><!--eliminar  -->
+            </td>
+        </tr>
+       
+        <!-- </tbody> -->
       </table>
-    </div>
+      <button type="button" name="button" class="btn-close-modalx" onclick="cerrarModal()" ><i class="fas fa-plus"></i>Insertar Guardarropa</button>
+       <button type="button" name="button" class="btn-close-modalx" onclick="cerrarModal()" ><i class="fas fa-times-circle"></i>Volver</button>
+       <br>
+       <br>
+
+
   </body>
 
 
