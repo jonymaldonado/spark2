@@ -37,7 +37,8 @@ public class UsuarioController {
 		
 	}
 	
-public ModelAndView mostrar(Request request,Response response) {
+	
+	public ModelAndView mostrar(Request request,Response response) {
 		int idUsers=new Integer(request.params("id"));
 		Usuario usuarioBuscado=this.repo.buscar(idUsers);
 		//List<Usuario> usuarios = this.repo.buscarTodos();
